@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d48feb6730.js" crossorigin="anonymous"></script>
+<style>
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.content{
+    background-color: #121212;
+    border-radius: 8px;
+    position: fixed;
+    width: 250px;
+}
+
+.icones-house-search ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.icones-house-search ul li a{
+     text-decoration: none;
+     color: #b3b3b3;
+     font-family: "DM Sans", sans-serif;
+     font-weight: 600;
+     margin: 0px 0px 10px 0px;
+}
+
+.icones-house-search ul li a:hover{
+    color: white;
+}
+
+.content .logo-spotify img{
+    width: 100px;
+    margin: 10px 0px 0px 10px;
+}
+
+.fa-solid{
+    margin-right: 8px;
+    margin-left: -15px;
+}
+
+.sua-biblioteca{
+    background-color: #121212;
+    color: #b3b3b3;
+    position: absolute;
+    top: 25%;
+    border-radius: 8px;
+    width: 250px;
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    position: fixed;
+}
+
+h1{
+    font-size: 17px;
+}
+
+.sua-biblioteca h1 .book, .plus{
+    color: #b3b3b3;
+    font-size: 16px;
+    margin: 0px 8px 0px 8px;
+}
+
+.sua-biblioteca h1 .plus{
+    margin-left: 60px;
+}
+
+.sua-biblioteca h1 .plus:hover{
+    transform: rotate(180deg);
+}
+
+.sua-biblioteca .container{
+    background-color: #3d3c3c;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 8px;
+    color: white;
+}
+
+h2{
+    font-size: 15px;
+}
+
+.subtitulo{
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.cookies{
+    text-align: left;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.cookies a{
+    text-decoration: none;
+    color: #636363;
+}
+
+.cookies a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.btn-criar-playlist{
+    border-radius: 40px;
+    border-color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: 0.3s;
+    width: 120px;
+}
+
+.btn-criar-playlist:hover{
+    background-color: #b3b3b3;
+    padding: 10px;
+
+}
+
+.btn-idioma .idioma{
+    border-radius: 40px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #3d3c3c00;
+    border-color: #b3b3b3;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <div class="content">
+    <div class="logo-spotify">
+        <a href="index.html"><img src="/imagens/logo-spotify.png" alt="Logo do Spotify"></a>
+    </div>
+    <div class="icones-house-search">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Início</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-search"></i>Buscar</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="sua-biblioteca">
+        <h1><span class="book"><i class="fa fa-book"></i></span> Sua Biblioteca <span class="plus"><i class="fa fa-plus"></i></span></h1>
+        <div class="container">
+            <h2>Crie sua primeira playlist </h2>
+            <p class="subtitulo">É fácil, vamos te ajudar.</p>
+            <input class="btn-criar-playlist" type="button" value="Criar playlist">
+        </div>
+
+        <div class="cookies">
+           <a href="cookies.html"><p>Cookies</p></a> 
+        </div>
+
+        <div class="btn-idioma">
+            <i class="fa-solid fa-globe"></i><input  class="idioma" type="button"  value="Português do Brasil">
+        </div>
+
+    </div>
+</body>
+</html>
