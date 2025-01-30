@@ -6,144 +6,6 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d48feb6730.js" crossorigin="anonymous"></script>
-<style>
-html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: black;
-}
-
-.content{
-    background-color: #121212;
-    border-radius: 8px;
-    position: fixed;
-    width: 250px;
-}
-
-.icones-house-search ul li{
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.icones-house-search ul li a{
-     text-decoration: none;
-     color: #b3b3b3;
-     font-family: "DM Sans", sans-serif;
-     font-weight: 600;
-     margin: 0px 0px 10px 0px;
-}
-
-.icones-house-search ul li a:hover{
-    color: white;
-}
-
-.content .logo-spotify img{
-    width: 100px;
-    margin: 10px 0px 0px 10px;
-}
-
-.fa-solid{
-    margin-right: 8px;
-    margin-left: -15px;
-}
-
-.sua-biblioteca{
-    background-color: #121212;
-    color: #b3b3b3;
-    position: absolute;
-    top: 25%;
-    border-radius: 8px;
-    width: 250px;
-    font-family: "DM Sans", sans-serif;
-    text-align: left;
-    position: fixed;
-}
-
-h1{
-    font-size: 17px;
-}
-
-.sua-biblioteca h1 .book, .plus{
-    color: #b3b3b3;
-    font-size: 16px;
-    margin: 0px 8px 0px 8px;
-}
-
-.sua-biblioteca h1 .plus{
-    margin-left: 60px;
-}
-
-.sua-biblioteca h1 .plus:hover{
-    transform: rotate(180deg);
-}
-
-.sua-biblioteca .container{
-    background-color: #3d3c3c;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 8px;
-    color: white;
-}
-
-h2{
-    font-size: 15px;
-}
-
-.subtitulo{
-    font-size: 12px;
-    margin-top: 0px;
-}
-
-.cookies{
-    text-align: left;
-    font-size: 12px;
-    margin-left: 15px;
-}
-
-.cookies a{
-    text-decoration: none;
-    color: #636363;
-}
-
-.cookies a:hover{
-    color: white;
-    text-decoration: underline;
-}
-
-.btn-criar-playlist{
-    border-radius: 40px;
-    border-color: white;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 800;
-    padding: 8px;
-    cursor: pointer;
-    font-size: 11px;
-    transition: 0.3s;
-    width: 120px;
-}
-
-.btn-criar-playlist:hover{
-    background-color: #b3b3b3;
-    padding: 10px;
-
-}
-
-.btn-idioma .idioma{
-    border-radius: 40px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    padding: 8px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    background-color: #3d3c3c00;
-    border-color: #b3b3b3;
-    color: white;
-}
-</style>
 </head>
 <body>
     <div class="content">
@@ -171,9 +33,49 @@ h2{
         </div>
 
         <div class="btn-idioma">
-            <i class="fa-solid fa-globe"></i><input  class="idioma" type="button"  value="Português do Brasil">
+            <button>
+                <span class="fa fa-globe"></span>
+                <span>Português do Brasil</span>
+            </button>
         </div>
-
     </div>
+<main>
+    <div class="main-container">
+        <nav class="header-navigation">
+       <div class="search">
+         <div class="seta-esquerda">
+            <button>
+                <img src="/imagens/small-left (2).png" alt="">
+            </button>
+          </div>
+        <div>
+            <button class="seta-direita">
+                <img src="/imagens/small-right.png" alt="">
+            </button>
+        </div>
+        <div class="search-bar">
+            <img src="/imagens/search.png" alt="">
+           <input id= "search-place" type="text" placeholder="O que você quer ouvir?" maxlength="800">
+        </div>
+        <div class="btn-login">
+            <button class="btn-inscrever">Inscreva-se</button>
+            <button class="btn-entrar">Entrar</button>
+        </div>
+        </div>
+        </nav>
+    </div>
+</main>
+
+    <footer class="spotify-footer">
+        <div class="footer-text">
+            <p class="text-testar">Testar o premium de graça</p>
+            <p class="text-inscrever">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+        </div>
+        <div class="btn-gratis">
+            <button>
+                Inscreva-se grátis
+            </button>
+        </div>
+    </footer>
 </body>
 </html>
